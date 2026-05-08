@@ -1,0 +1,27 @@
+{
+  "name": "msserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx poku",
+    "start": "nodemon --env-file .env ./src/server.js",
+    "test:server": "start-server-and-test start http://localhost:3000 test",
+    "sonar": "sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_7418905509b736c29f746383a6ad8c0f8eeed9a4 -Dsonar.projectKey=teste"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sonar/scan": "^4.3.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "msnodesqlv8": "^5.1.1",
+    "mssql": "^11.0.1",
+    "mysql2": "^3.14.3",
+    "nodemon": "^3.1.10",
+    "poku": "^3.0.2",
+    "start-server-and-test": "^2.1.0"
+  }
+}
